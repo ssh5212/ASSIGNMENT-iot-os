@@ -1,0 +1,12 @@
+# Parameter
+DATA = './make_data/data.csv'
+LEARNING_RATE = 1e-4
+WINDOW_SIZE = 8
+FEATURE_SIZE = 6
+
+NUM_TRAIN = 35000
+NUM_VAL = 10000
+BATCH_SIZE = 100
+EPOCHS = 100
+DELETE_TRAIN = False
+DELETE_TEST = False
