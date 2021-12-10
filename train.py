@@ -56,7 +56,6 @@ model.fit(x_train, y_train, batch_size=BATCH_SIZE, shuffle=True,
           epochs=EPOCHS, validation_data=(x_val, y_val),
           callbacks=[cb_tensorboard, cb_ckpt])
 
-
-
+model.save('weights.10-0.00.h5')
 
 
