@@ -17,14 +17,17 @@
 - Java 11.0.10.9
 
 ### 프레임워크 및 라이브러리
-- Telegram bot library
+- numpy 1.164
+- tensorflow 2.7
+- pandas 1.3.4
 
 ### 개발 환경 & IDE
 - Windows 10
+- Android 11 (Api 30)
 - Visual Studio Code 1.56.0
 - PyCharm Professional 2021-2 (Community)
 - Android Studio 4.2
-- Android 11 (Api 30)
+
 
 ### 기타
 - Raspberry PI 3
