@@ -27,6 +27,7 @@
 - PyCharm Professional 2021-2 (Community)
 - Android Studio 4.2
 - Android 11 (Api 30)
+- Raspberry Pi OS 5.10
 
 ### 기타
 - Raspberry PI 3
