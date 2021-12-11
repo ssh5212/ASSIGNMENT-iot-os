@@ -24,6 +24,7 @@
 ### 개발 환경 & IDE
 - Windows 10
 - Android 11 (Api 30)
+- Raspberry Pi OS 5.10
 - Visual Studio Code 1.56.0
 - PyCharm Professional 2021-2 (Community)
 - Android Studio 4.2
