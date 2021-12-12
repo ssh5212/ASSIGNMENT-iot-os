@@ -8,6 +8,7 @@ python train.py
 timeout 1000
 
 python test.py
+timeout 30
 
 git add *
 git commit -m "Data Update"
