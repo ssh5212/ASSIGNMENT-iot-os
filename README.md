@@ -35,4 +35,4 @@
 - Sense HAT (온도, 습도, 기압계 센서)
 
 ## 완성본
-Youtube Link : https://www.youtube.com/watch?v=yRk7LRgl60Q
+- Youtube Link : https://www.youtube.com/watch?v=yRk7LRgl60Q
