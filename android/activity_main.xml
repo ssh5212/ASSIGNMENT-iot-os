@@ -1,0 +1,68 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginTop="20dp"
+                android:id="@+id/linechart"
+                android:layout_gravity="center"
+                android:layout_width="400dp"
+                android:layout_height="400dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text = "오늘은 몇 시에 들어올 예정인가요?"
+                android:id="@+id/textView"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="입을 옷 고르기 &gt;"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_ly">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:itemIconTint="@color/tab_selection_color"
+                app:itemTextColor="@color/tab_selection_color"
+                app:menu="@menu/btm_tabmenu">
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TabHost>

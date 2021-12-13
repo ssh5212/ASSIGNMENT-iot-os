@@ -1,0 +1,281 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:text = "귀가 시간 : "/>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/Temperatures"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text = "01"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:id="@+id/serach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:text="조회" />
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:text="추가" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/Outer_Last"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:text="&lt;&lt;" />
+
+                <ImageView
+                    android:background="@drawable/background_rounding"
+                    android:padding = "15dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="20dp"
+                    android:id="@+id/Outer_Cloth"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src = "@drawable/nullimage"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/Outer_Next"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:layout_gravity="right|center"
+                    android:text="&gt;&gt;" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:id = "@+id/Outer_name"
+                android:text="선택되지 않았습니다." />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:id = "@+id/Outer_category"
+                android:text="nullimage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/TOP_Last"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:text="&lt;&lt;" />
+
+                <ImageView
+                    android:background="@drawable/background_rounding"
+                    android:padding = "15dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="20dp"
+                    android:id="@+id/TOP_Cloth"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src = "@drawable/nullimage"
+                    android:layout_gravity="center|center" />
+
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/TOP_Next"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:layout_gravity="right|center"
+                    android:text="&gt;&gt;" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Top_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="선택되지 않았습니다."
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:id = "@+id/Top_category"
+                android:text="nullimage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/BOT_Last"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:layout_gravity="left|center"
+                    android:text="&lt;&lt;" />
+
+                <ImageView
+                    android:background="@drawable/background_rounding"
+                    android:padding = "15dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="20dp"
+                    android:id="@+id/BOT_Cloth"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src = "@drawable/nullimage"
+                    android:layout_gravity="center|center" />
+
+                <Button
+                    android:layout_margin="20dp"
+                    android:id="@+id/BOT_Next"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="#00ff0000"
+                    android:layout_gravity="right|center"
+                    android:text="&gt;&gt;" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:id = "@+id/Bot_name"
+                android:text="선택되지 않았습니다." />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:id = "@+id/Bot_category"
+                android:text="nullimage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:id="@+id/Character"
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/background_rounding"
+                        android:padding="15dp"
+                        android:src = "@drawable/character"
+                        android:scaleType="centerCrop" />
+                    <ImageView
+                        android:id="@+id/Top_Character"
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/background_rounding"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop" />
+                    <ImageView
+                        android:id="@+id/Bot_Character"
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/background_rounding"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop" />
+                    <ImageView
+                        android:id="@+id/Outer_Character"
+                        android:layout_width="260dp"
+                        android:layout_height="260dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/background_rounding"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_ly">
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:itemIconTint="@color/tab_selection_color"
+                    app:itemTextColor="@color/tab_selection_color"
+                    app:menu="@menu/btm_tabmenu">
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</TabHost>

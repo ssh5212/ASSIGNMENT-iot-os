@@ -1,0 +1,148 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:text = "제작자"
+                android:textSize = "22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp"
+                android:text = "201621751 신승헌"
+                android:textSize = "18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:text = "조장, 기획, 설계, 데이터 전처리, 인공지능 구현, 영상, 보고서, PPT, 발표"
+                android:textSize = "12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:text = "201621759 정주현"
+                android:textSize = "18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:text = "안드로이드 구현, 회의록"
+                android:textSize = "12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text = "201720965 허태권"
+                android:textSize = "18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:text = "HW 설계, HW 구현, 인공지능 구현"
+                android:textSize = "12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text = "201821329 장정민"
+                android:textSize = "18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:text = "안드로이드 구현, 보고서"
+                android:textSize = "12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text = "201823868 홍민정"
+                android:textSize = "18dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:text = "안드로이드 구현, PPT"
+                android:textSize = "12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text = "개발자 주소"
+                android:textSize = "22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_marginLeft="20dp"
+                android:text = "https://github.com/ssh5212/IoT_OS"
+                android:textSize = "18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:id="@+id/home_ly">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:itemIconTint="@color/tab_selection_color"
+                app:itemTextColor="@color/tab_selection_color"
+                app:menu="@menu/btm_tabmenu">
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>
