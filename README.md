@@ -33,6 +33,7 @@
 ### 기타
 - Raspberry PI 3
 - Sense HAT (온도, 습도, 기압계 센서)
+- 공공데이터 API (지상(종관, ASOS) 시간자료 조회서비스)
 
 ## 완성본
 - Youtube Link : https://www.youtube.com/watch?v=yRk7LRgl60Q
